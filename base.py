@@ -8,16 +8,16 @@ class MyTopo( Topo ):
     def __init__( self ):
         "Create custom topo."
 
-        # Initialize topology
+        #Inicia topology
         Topo.__init__( self )
 
-        # Add hosts and switches
+        # Agrega hosts and switches
         leftHost = self.addHost( 'h1' )
         rightHost = self.addHost( 'h2' )
         leftSwitch = self.addSwitch( 's3' )
         rightSwitch = self.addSwitch( 's4' )
 
-        # Add links
+        # Agrega links
         self.addLink( leftHost, leftSwitch )
         self.addLink( leftSwitch, rightSwitch )
         self.addLink( rightSwitch, rightHost )
