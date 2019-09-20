@@ -9,8 +9,8 @@ Implementacion de la emulación de una red lan y parámetros de medición en el 
 
  +          [SW]------------[SW]------------[SW]
  +            |               |               |
- + [HS]------[SW]            [SW]            [SW]------[HS]
+ + [HS]------[SW]+           +[SW]           +[SW]------[HS]
  +           |               |               |
  +          [SW]            [SW]            [SW]
  +        /     \          /    \          /    \  
- +    [HS]      [HS]   [HS]     [HS]   [HS]      [HS]
+ +    [HS]+     +[HS]   +[HS]    +[HS]   [HS]    +[HS]
