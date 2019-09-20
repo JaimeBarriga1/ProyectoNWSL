@@ -24,6 +24,7 @@ def TopoBC():
     s15 = net.addSwitch('s15', cls=OVSKernelSwitch)
     s9 = net.addSwitch('s9', cls=OVSKernelSwitch)
 
+
     #Agregando hosts
     h1 = net.addHost('h1', cls=Host, ip='172.18.7.1', defaultRoute=None)
     h3 = net.addHost('h3', cls=Host, ip='172.18.7.2', defaultRoute=None)
@@ -31,6 +32,9 @@ def TopoBC():
     h6 = net.addHost('h6', cls=Host, ip='172.18.7.4', defaultRoute=None)
     h2 = net.addHost('h2', cls=Host, ip='172.18.7.5', defaultRoute=None)
     h4 = net.addHost('h4', cls=Host, ip='172.18.7.6', defaultRoute=None)
+
+
+
 
     #Agregando links
     net.addLink(s11, s12)
