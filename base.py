@@ -11,11 +11,22 @@ class MyTopo( Topo ):
         #Inicia topology
         Topo.__init__( self )
 
-        # Agrega hosts and switches
+      # Add hosts
         leftHost = self.addHost( 'h1' )
         rightHost = self.addHost( 'h2' )
-        leftSwitch = self.addSwitch( 's3' )
-        rightSwitch = self.addSwitch( 's4' )
+        leftDownOneHost = self.addHost( 'h4' )
+        leftDownSecondHost = self.addHost( 'h6' )
+        rightDownOneHost = self.addHost( 'h5' )
+        rightDownSecondHost = self.addHost( 'h7' )
+
+        #Add Switches
+        leftSwitch = self.addSwitch( 's1' )
+        centerSwitch = self.addSwitch( 's2' )
+        rightSwitch = self.addSwitch( 's3' )
+        leftCenterSwitch = self.addSwitch( 's4' )
+        leftDownSwitch = self.addSwitch( 's5' )
+        rightCenterSwitch = self.addSwitch( 's6' )
+        rightDownSwitch = self.addSwitch( 's7' )
 
         # Agrega links
         self.addLink( leftHost, leftSwitch )
